@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import ProductTitle from "./components/ProductTitle/ProductTitle";
 import Price from "./components/Price/Price";
 import Rate from "./components/Rate/Rate";
+import Description from "./components/Description/ِDescription";
+import ProductPurchaseInfo from "./components/ProductPurchaseInfo/ProductPurchaseInfo";
 
 const ProductInfo = ({ product }) => {
     return (
@@ -15,6 +17,8 @@ const ProductInfo = ({ product }) => {
                 </div>
                 <Rate rate={product.rating} />
             </div>
+            <Description description={product.description} />
+            <ProductPurchaseInfo />
         </div>
     )
 }

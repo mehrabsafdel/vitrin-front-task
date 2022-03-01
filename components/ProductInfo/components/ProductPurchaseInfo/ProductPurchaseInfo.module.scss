@@ -1,0 +1,26 @@
+@import './assets/styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 40px;
+
+  .colorContainer {
+    h5 {
+      margin: 0 0 20px;
+    }
+    .colorPickerList {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .separator {
+    position: relative;
+    top: 10px;
+    border-left: 1px solid $my-gray;
+    opacity: .7;
+    margin: 0 20px;
+  }
+}
