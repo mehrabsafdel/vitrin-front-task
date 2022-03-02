@@ -1,5 +1,6 @@
 import style from './ProductPurchaseInfo.module.scss'
-import ProductColor from "../ProductColor/ProductColor";
+import ProductColor from '../ProductColor/ProductColor' ;
+import CustomSelect from '../CustomSelect/CustomSelect'
 
 const ProductPurchaseInfo = () => {
     return (
@@ -15,6 +16,25 @@ const ProductPurchaseInfo = () => {
                 </div>
             </div>
             <div className={style.separator} />
+            <div>
+                <h5>SIZE</h5>
+                <CustomSelect width={80}>
+                    <option>(UK 8)</option>
+                    <option>(UK 10)</option>
+                    <option>(UK 12)</option>
+                    <option>(UK 14)</option>
+                </CustomSelect>
+            </div>
+            <div className={style.separator} />
+            <div>
+                <h5>QTY</h5>
+                <CustomSelect width={50}>
+                    <option>(1)</option>
+                    <option>(2)</option>
+                    <option>(3)</option>
+                    <option>(4)</option>
+                </CustomSelect>
+            </div>
         </div>
     )
 }

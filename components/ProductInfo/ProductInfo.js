@@ -6,6 +6,7 @@ import Price from "./components/Price/Price";
 import Rate from "./components/Rate/Rate";
 import Description from "./components/Description/ِDescription";
 import ProductPurchaseInfo from "./components/ProductPurchaseInfo/ProductPurchaseInfo";
+import ProductActions from "./components/ProductActions/ProductActions";
 
 const ProductInfo = ({ product }) => {
     return (
@@ -19,6 +20,7 @@ const ProductInfo = ({ product }) => {
             </div>
             <Description description={product.description} />
             <ProductPurchaseInfo />
+            <ProductActions />
         </div>
     )
 }
